@@ -33,4 +33,11 @@ public class UserServiceImpl implements UserService {
 		System.out.println("Server receive the user:" + user.getUserName());
 	}
 
+	public String getUserNamebyId(int userId) {
+		// TODO Auto-generated method stub
+		UserInfo user = userInfoMap.get(userId);
+		System.out.println("Server get the userinfo:" + user.toString());
+		return user.toString();
+	}
+
 }

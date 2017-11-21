@@ -15,8 +15,10 @@
  	<qingzhu:protocol  name="rmi" port="12345" host="127.0.0.1" contextpath="/provider1"></qingzhu:protocol>
  	
  	<bean id="UserServiceImpl" class="com.liugw.provider.service.UserServiceImpl"/>
+ 	<bean id="StudentServiceImpl" class="com.liugw.provider.service.StudentServiceImpl"/>
  	<!-- <qingzhu:service interface="com.dongnao.jack.test.service.TestService" ref="TestServiceImpl1" protocol="http"></qingzhu:service> -->
  	<qingzhu:service interface="com.liugw.provider.service.dubbotest.UserService" ref="UserServiceImpl" protocol="http"></qingzhu:service>
+ 	<qingzhu:service interface="com.liugw.provider.service.dubbotest.StudentService" ref="StudentServiceImpl" protocol="http"></qingzhu:service>
        
        
 </beans>
